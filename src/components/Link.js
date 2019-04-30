@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Link = () => {
+const Link = ({ onClick }) => {
   return (
     <button
-      onClick={ () => console.log('test message')}
+      onClick={onClick}
     >
       BUTTON1
     </button>
