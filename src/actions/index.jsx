@@ -5,3 +5,12 @@ export const toggleTodo = id => {
   id
   }
 }
+
+let nextTodoId = 4;
+export const addTodo = text => {
+  return {
+    type: 'ADD_TODO',
+    id: nextTodoId++,
+    text,
+  }
+}

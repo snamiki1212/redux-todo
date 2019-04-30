@@ -15,6 +15,16 @@ const todos = (state = initialTodos, action) => {
         }
         return ele
       });
+    case 'ADD_TODO':
+      console.log('REDUCER: add-todo');
+      return [
+        ...state,
+        {
+          id: action.id,
+          text: action.text,
+          completed: false
+        }
+      ];
     default:
       console.log('REDUCER: here is default reducer');
       return state;
