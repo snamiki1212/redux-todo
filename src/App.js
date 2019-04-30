@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import AddTodo from './containers/AddTodo';
 import VisibilityTodoList from './containers/VisibilityTodoList';
-import Link from './components/Link';
+import FilterLink from './containers/FilterLink';
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
       test
       <AddTodo />
       <VisibilityTodoList />
-      <Link />
+      <FilterLink />
     </div>
   );
 }
