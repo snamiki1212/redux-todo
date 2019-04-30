@@ -1,4 +1,6 @@
-## [Reduxの公式ドキュメントのExample: TodoList](https://redux.js.org/basics/basic-tutorial)の写景
+- [Reduxの公式ドキュメントのExample: TodoList](https://redux.js.org/basics/basic-tutorial)の写景
+- デプロイ：`gh-pages`ブランチ
+- ビルド：`yarn run deploy`
 
 ---
 
