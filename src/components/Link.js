@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Link = ({ onClick }) => {
+const Link = ({ children, onClick }) => {
   return (
     <button
       onClick={onClick}
     >
-      BUTTON1
+      {children}
     </button>
   );
 }
