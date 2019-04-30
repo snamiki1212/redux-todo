@@ -1,11 +1,15 @@
-import React from 'react';
 import Link from '../components/Link';
+import { connect } from 'react-redux';
 
-const FilterLink = () => {
-  const onClick = () => {console.log('test message 1')}
-  return(
-    <Link onClick={onClick}/>
-  )
-}
+const mapStateToProps = (state) => ({
+  state
+})
 
-export default FilterLink;
+const mapDispatchToProps = (dispatch) => ({
+  onClick: () => {console.log('test message 1')}
+});
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Link);
