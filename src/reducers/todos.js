@@ -1,7 +1,7 @@
 const initialTodos = [
-  {id: 1, text: 'this is text a', completed: false},
-  {id: 2, text: 'this is text b', completed: false},
-  {id: 3, text: 'this is text c', completed: false}
+  {id: 1, text: 'Buy Milk', completed: false},
+  {id: 2, text: 'Read README', completed: false},
+  {id: 3, text: 'Write Blog', completed: false}
 ];
 
 const todos = (state = initialTodos, action) => {
