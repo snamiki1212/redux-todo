@@ -1,12 +1,18 @@
 import React from 'react';
 import Todo from '../components/Todo';
 
-const TodoList = () => {
-  const l = ['a', 'b', 'c'];
-
+const TodoList = ({ todos, toggleTodo }) => {
+  console.dir(todos);
   return(
     <ul>
-      {l.map(x => <Todo text={x} />)}
+      {todos.map(x =>
+        <Todo
+          key={x.id}
+          text={x.text}
+          onClick={() => toggleTodo(x.id)}
+          completed={x.completed}
+        />
+      )}
     </ul>
   );
 }

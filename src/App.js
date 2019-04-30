@@ -1,14 +1,12 @@
 import React from 'react';
 import './App.css';
-import Todo from './components/Todo';
-import TodoList from './components/TodoList';
+import VisibilityTodoList from './containers/VisibilityTodoList'
 
 function App() {
   return (
     <div className="App">
       test
-      <Todo text="this is text" />
-      <TodoList />
+      <VisibilityTodoList />
     </div>
   );
 }
