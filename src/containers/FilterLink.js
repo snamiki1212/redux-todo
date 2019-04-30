@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { setVisibilityFilter } from '../actions';
 
 const mapStateToProps = (state, ownProps) => ({
-  // active: state.visibilityFilter === ownProps.filter
+  active: state.visibilityFilter === ownProps.filter
 })
 
 const mapDispatchToProps = (dispatch, ownProps) => ({
